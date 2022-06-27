@@ -9,4 +9,7 @@ describe( 'searchCandies', () => {
   it( 'returns the expected result searching with arguments ("Ma",2)', () => {
     expect(searchCandies('Ma', 2)).toEqual([ 'Mars' ]);
   });
+  it( 'returns the expected result searching with arguments ("S",10)', () => {
+    expect(searchCandies('S', 10)).toEqual([ 'Skitties', 'Skittles', 'Starburst' ]);
+  });
 });
