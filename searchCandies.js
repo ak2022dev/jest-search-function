@@ -21,7 +21,7 @@ const searchCandies = (name,price) => {
   // Return an array containing names of candies that
   // start with name and cost less than price
   
-  return (candies.filter(candy => candy.name.startsWith(name) && candy.price < price))
+  return (candies.filter(candy => candy.name.toUpperCase().startsWith(name.toUpperCase()) && candy.price < price))
                  .map(candy => candy.name)
 
 }
